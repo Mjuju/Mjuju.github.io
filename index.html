@@ -1,3 +1,30 @@
-<div style="background:red  width:400px; height:400px;">
-  
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title></title>
+		<style>
+			.box{
+				width:100px;
+				height:100px;
+				background:red;
+			}	
+		</style>
+		
+	</head>
+	<body>
+		<div class="box"></div>
+		<script>
+		
+			(function(){ 
+				var oDiv=document.querySelector('.box')
+			
+				oDiv.addEventListener("gesturestart",function(){
+					this.style.background="#000"
+					
+				})
+			})()
+		</script>
+	</body>
+</html>
